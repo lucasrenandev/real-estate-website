@@ -109,6 +109,10 @@ section {
   font-size: var(--p-font);
   font-weight: 400;
   text-transform: capitalize;
+  transition: color 0.4s ease;
+}
+.header .nav-list li a:hover {
+  color: var(--text-color);
 }
 
 .header .buttons {
@@ -117,11 +121,11 @@ section {
 }
 
 .header .buttons .btn2 {
-  padding: 1rem 1.8rem;
   background-color: var(--main-color);
+  color: var(--text-color);
+  padding: 1rem 1.8rem;
   font-size: var(--p-font);
   font-weight: 500;
-  color: var(--text-color);
   text-transform: capitalize;
   margin-left: 2rem;
   transition: transform 0.4s ease;
@@ -131,9 +135,13 @@ section {
 }
 
 .header .buttons .btn1 {
-  color: var(--text-color);
   font-size: var(--p-font);
   font-weight: 500;
+  color: var(--other-color);
+  transition: color 0.4s ease;
+}
+.header .buttons .btn1:hover {
+  color: var(--text-color);
 }
 
 .header #menu-icon {
@@ -281,4 +289,128 @@ section {
 
 .property-content .box .property-list p i {
   color: var(--main-color);
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 6rem;
+}
+
+.about .about-image img {
+  width: 100%;
+  height: auto;
+}
+
+.about .about-text h2 {
+  font-size: var(--h2-font);
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 2.5rem;
+}
+
+.about .about-text p {
+  font-size: var(--p-font);
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--other-color);
+}
+
+.about .about-text .center-button {
+  text-align: left;
+}
+
+.cta-content {
+  background: url("../images/ss.jpg") no-repeat center center/cover;
+  padding: 10rem 2rem;
+  text-align: center;
+  border-radius: 2rem;
+}
+
+.cta-content h2 {
+  font-size: var(--h2-font);
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+}
+
+.cta-content p {
+  font-size: var(--p-font);
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.cta-content .center-button {
+  margin-top: 2.5rem;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+  gap: 2rem;
+}
+
+.contact-content .box h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.contact-content .box nav ul li {
+  margin-bottom: 2rem;
+}
+
+.contact-content .box nav ul li a {
+  display: inline-block;
+  color: var(--other-color);
+  font-size: var(--p-font);
+  font-weight: 400;
+  transition: all 0.4s ease;
+}
+.contact-content .box nav ul li a:hover {
+  transform: translate(-0.7rem, -0.3rem);
+  color: var(--text-color);
+}
+
+.contact-content .box img {
+  width: 13.2rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.contact-content .box p {
+  font-size: var(--p-font);
+  font-weight: 400;
+  color: var(--other-color);
+  line-height: 1.8;
+}
+
+.contact-content .box .social {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.contact-content .box .social a {
+  font-size: 2rem;
+  color: var(--other-color);
+  transition: all 0.4s ease;
+}
+.contact-content .box .social a:hover {
+  transform: translateY(-0.3rem);
+  color: var(--text-color);
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+}
+
+.footer p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
 }/*# sourceMappingURL=main.css.map */

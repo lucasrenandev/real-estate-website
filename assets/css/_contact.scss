@@ -1,0 +1,57 @@
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+    gap: 2rem;
+}
+
+.contact-content .box h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.contact-content .box nav ul li {
+    margin-bottom: 2rem;
+}
+
+.contact-content .box nav ul li a {
+    display: inline-block;
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 400;
+    transition: all 0.4s ease;
+    &:hover {
+        transform: translate(-0.7rem, -0.3rem);
+        color: var(--text-color);
+    }
+}
+
+.contact-content .box img {
+    width: 13.2rem;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.contact-content .box p {
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: var(--other-color);
+    line-height: 1.8;
+}
+
+.contact-content .box .social {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.contact-content .box .social a {
+    font-size: 2rem;
+    color: var(--other-color);
+    transition: all 0.4s ease;
+    &:hover {
+        transform: translateY(-0.3rem);
+        color: var(--text-color);
+    }
+}
