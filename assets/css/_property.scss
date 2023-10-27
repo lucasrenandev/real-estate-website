@@ -1,0 +1,46 @@
+.property-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5.5rem;
+}
+
+.property-content .box .image img {
+    width: 100%;
+    height: auto;
+}
+
+.property-content .box h3 {
+    margin: 2.5rem 0 1rem;
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.property-content .box > p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--other-color);
+    text-transform: capitalize;
+}
+
+.property-content .box .property-list {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.property-content .box .property-list p {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.property-content .box .property-list p i {
+    color: var(--main-color);
+}

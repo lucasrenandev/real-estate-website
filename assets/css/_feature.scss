@@ -1,0 +1,16 @@
+.feature {
+    padding: 70px 6% 60px;
+}
+
+.feature .feature-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 5.5rem;
+}
+
+.feature .feature-content .box img {
+    width: 100%;
+    height: auto;
+}
