@@ -1,0 +1,137 @@
+@media (max-width: 1290px) {
+    html {
+        font-size: 55%;   
+    }
+    
+    .header {
+        padding: 1.6rem 2%;
+    }
+
+    .header.sticky {
+        padding: 1.2rem 2%;
+    }
+
+    section {
+        padding: 8rem 2% 7rem;
+    }
+
+    .feature {
+        padding: 6rem 2% 5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    :root {
+        --h1-font: 6rem;
+        --h2-font: 4rem;
+    }
+    
+    .header #menu-icon {
+        display: block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 30rem;
+        height: 100vh;
+        background-color: #101821;
+        transition: right 0.4s ease;
+        &.open {
+            right: 0;
+        }
+    }
+
+    .header .navbar .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .navbar .nav-list li {
+        margin: 0;
+    }
+
+    .header .navbar .nav-list li a {
+        display: block;
+        font-size: 2rem;
+        padding: 3rem;
+    }
+
+    .home {
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+
+    .home .home-text {
+        order: 2;
+    }
+
+    .home .home-image {
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+
+    .feature .feature-content {
+        flex-wrap: wrap;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 7rem 2% 6rem;
+    }
+    
+    .cta-content {
+        padding: 7rem 2rem;
+    }
+}
+
+@media (max-width: 540px) {
+    html {
+        font-size: 50%;
+    }
+    
+    :root {
+        --h1-font: 4.5rem;
+        --h2-font: 3.5rem;
+        --p-font: 1.6rem;
+    }
+    
+    .home .home-image {
+        width: 42rem;
+        height: 42rem;
+    }
+}
+
+@media (max-width: 380px) {
+    :root {
+        --h1-font: 4rem;
+        --h2-font: 3rem;
+        --p-font: 1.5rem;
+    }
+
+    section, .feature  {
+        padding: 6rem 2% 5rem;
+    }
+    
+    .cta-content {
+        padding: 5rem 2rem;
+    }
+
+    .home .home-image {
+        width: 34rem;
+        height: 34rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .home .home-image {
+        width: 30rem;
+        height: 30rem;
+    }
+}
