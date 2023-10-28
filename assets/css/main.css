@@ -469,6 +469,7 @@ section {
   .home {
     grid-template-columns: 1fr;
     height: 100%;
+    gap: 2rem;
   }
   .home .home-text {
     order: 2;
@@ -482,6 +483,7 @@ section {
   }
   .about {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 @media (max-width: 768px) {
@@ -512,8 +514,11 @@ section {
     --h2-font: 3rem;
     --p-font: 1.5rem;
   }
-  section, .feature {
+  section {
     padding: 6rem 2% 5rem;
+  }
+  .feature {
+    padding: 5rem 2%;
   }
   .cta-content {
     padding: 5rem 2rem;

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!---------------------------------CSS links---------------------------------->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
@@ -32,7 +33,7 @@
     </header><!--end header-->
     <!---------------------------------Home section---------------------------------->
     <section class="home">
-        <main class="home-text">
+        <main class="home-text" data-aos="zoom-in">
             <h1>Your house is waiting for you!</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magni aliquam esse non itaque, dignissimos consequatur accusantium porro, fugiat aspernatur facilis reiciendis recusandae.</p>
             <form action="#" class="form">
@@ -42,12 +43,12 @@
                 </div><!--end form content-->
             </form><!--end form-->
         </main><!--end home text-->
-        <figure class="home-image">
+        <figure class="home-image" data-aos="zoom-in">
             <img src="assets/images/hero.png" alt="Main image">
         </figure><!--end home image-->
     </section><!--end home-->
     <!---------------------------------Feature section---------------------------------->
-    <section class="feature">
+    <section class="feature" data-aos="zoom-in">
         <header class="heading">
             <h2>Feature in</h2>
         </header><!--end heading-->
@@ -70,7 +71,7 @@
         </article><!--end feature content-->
     </section><!--end feature section-->
     <!---------------------------------Property section---------------------------------->
-    <section class="property">
+    <section class="property" data-aos="zoom-in">
         <header class="heading">
             <h2>Popular residence</h2>
         </header><!--end heading-->
@@ -145,10 +146,10 @@
     </section><!--end property section-->
     <!---------------------------------About section---------------------------------->
     <section class="about">
-        <figure class="about-image">
+        <figure class="about-image" data-aos="zoom-in">
             <img src="assets/images/Group 1.png" alt="About image">
         </figure><!--end about image-->
-        <article class="about-text">
+        <article class="about-text" data-aos="zoom-in">
             <h2>We help people to find homes</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quos, delectus magnam culpa tenetur animi ut iure, debitis rerum perferendis alias neque. Dolore eos sed inventore et, nostrum neque placeat!</p>
             <div class="center-button">
@@ -157,7 +158,7 @@
         </article><!--end about text-->
     </section><!--end about section-->
     <!---------------------------------Cta section---------------------------------->
-    <section class="cta">
+    <section class="cta" data-aos="zoom-in">
         <article class="cta-content">
             <h2>Let's simply being with rentiz</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla natus ducimus odio dignissimos officiis ea, sapiente repudiandae blanditiis reiciendis similique illo id voluptatum est nemo ratione, placeat in doloribus laudantium.</p>
@@ -167,7 +168,7 @@
         </article><!--end cta content-->
     </section><!--end cta section-->
     <!---------------------------------Contact section---------------------------------->
-    <section class="contact">
+    <section class="contact" data-aos="zoom-in">
         <div class="contact-content">
             <div class="box">
                 <img src="assets/images/logo.png" alt="Logo">
@@ -230,6 +231,13 @@
         <p>&copy; 2023. All rights reserved. Developed by Tahmid Ahmed.</p>
     </footer><!--end footer-->
     <!---------------------------------JavaScript links---------------------------------->
-    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1200
+        });
+    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

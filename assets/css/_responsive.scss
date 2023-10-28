@@ -61,6 +61,7 @@
     .home {
         grid-template-columns: 1fr;
         height: 100%;
+        gap: 2rem;
     }
 
     .home .home-text {
@@ -78,6 +79,7 @@
 
     .about {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }
 
@@ -115,8 +117,12 @@
         --p-font: 1.5rem;
     }
 
-    section, .feature  {
+    section {
         padding: 6rem 2% 5rem;
+    }
+
+    .feature {
+        padding: 5rem 2%;
     }
     
     .cta-content {
